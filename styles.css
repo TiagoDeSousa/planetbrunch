@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: #28282f;
+}
+h1 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+a {
+  font-weight: 400;
+  color: #fff;
+}
+p {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 40px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+strong {
+  font-weight: 400;
+}
+section {
+  height: 100vh;
+  padding: 0;
+  width: 100%;
+  background: url("./home.jpg") no-repeat;
+  background-size: cover;
+  background-color: #58576a;
+  background-blend-mode: multiply;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  opacity: 0;
+}
+section.fade-in {
+  opacity: 1;
+}
+section * {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  opacity: 0;
+}
+section.fade-in * {
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  opacity: 1;
+}
+.main {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  -webkit-transform: translateY(-50%) !important;
+}
+#main img {
+  margin-bottom: 40px;
+}
+#logo {
+  max-width: 215px;
+}
+#bottom {
+  margin-top: 80px;
+  width: 100%;
+  text-align: center;
+}
+#bottom a {
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  opacity: 0.3;
+}
+#bottom a:hover {
+  opacity: 0.8;
+}
+#bottom img {
+  max-height: 40px;
+  display: inline-block;
+  margin: 0 40px;
+}
+#bottom span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  display: block;
+  opacity: 0.8;
+  margin-bottom: 40px;
+  letter-spacing: 4px;
+}
+@media all and (max-width: 1200px) {
+  #main {
+    max-width: 65%;
+  }
+  #bottom img {
+    max-height: 30px;
+    margin: 0 24px;
+  }
+}
+@media all and (max-width: 767px) {
+  #logo {
+    max-width: 180px;
+  }
+  #main {
+    max-width: 90%;
+  }
+  #main img {
+    margin-bottom: 32px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  br {
+    display: none;
+  }
+  #bottom {
+    margin-top: 40px;
+  }
+  #bottom img {
+    max-height: 20px;
+    margin: 0 16px;
+  }
+}
